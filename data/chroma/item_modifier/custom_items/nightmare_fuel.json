@@ -1,0 +1,28 @@
+[
+  {
+    "function": "minecraft:set_fireworks",
+    "flight_duration": 7
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "chroma:nightmare_fuel",
+      "minecraft:item_name": {
+        "translate": "item.chroma.nightmare_fuel"
+      },
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "minecraft:firework_explosion"
+        ]
+      }
+    }
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "chroma": {
+        "id": "nightmare_fuel"
+      }
+    }
+  }
+]

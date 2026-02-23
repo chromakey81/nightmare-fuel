@@ -1,0 +1,16 @@
+[
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "chroma": {
+        "model": true
+      }
+    }
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "chroma:crossbow_nightmare_fuel"
+    }
+  }
+]
