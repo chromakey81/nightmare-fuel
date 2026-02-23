@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "hit_with_nightmare_fuel": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "type": "minecraft:firework_rocket",
+              "nbt": {
+                "FireworksItem": {
+                  "id": "minecraft:firework_rocket",
+                  "components": {
+                    "minecraft:custom_data": {
+                      "chroma": {
+                        "id": "nightmare_fuel"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "hit_with_nightmare_fuel"
+    ]
+  ],
+  "rewards": {
+    "function": "chroma:nightmare_fuel/hit"
+  }
+}

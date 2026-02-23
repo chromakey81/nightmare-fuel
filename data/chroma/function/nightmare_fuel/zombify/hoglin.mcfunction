@@ -1,0 +1,1 @@
+function chroma:nightmare_fuel/zombify/main

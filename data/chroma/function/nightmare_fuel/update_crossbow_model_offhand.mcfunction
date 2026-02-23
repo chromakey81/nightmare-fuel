@@ -1,0 +1,4 @@
+execute store result score @s chroma.dummy run data get entity @s equipment.offhand.components."minecraft:custom_data".chroma.model
+execute unless score @s chroma.dummy matches 1.. if entity @s[nbt={equipment:{offhand:{id:"minecraft:crossbow",components:{"minecraft:charged_projectiles":[{components:{"minecraft:custom_data":{chroma:{id:"nightmare_fuel"}}}}]}}}}] run return run item modify entity @s weapon.offhand chroma:add_crossbow_model
+execute if score @s chroma.dummy matches 1.. unless data entity @s SelectedItem.components."minecraft:charged_projectiles"[0] run item modify entity @s weapon.offhand chroma:remove_crossbow_model
+scoreboard players reset @s chroma.dummy

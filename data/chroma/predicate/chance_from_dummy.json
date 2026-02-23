@@ -1,0 +1,9 @@
+{
+  "condition": "minecraft:random_chance",
+  "chance": {
+    "type": "minecraft:score",
+    "target": "this",
+    "score": "chroma.dummy",
+    "scale": 0.01
+  }
+}

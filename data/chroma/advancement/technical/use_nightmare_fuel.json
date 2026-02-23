@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "use_nightmare_fuel": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "minecraft:firework_rocket",
+              "predicates": {
+                "minecraft:custom_data": {
+                  "chroma": {
+                    "id": "nightmare_fuel"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "use_nightmare_fuel"
+    ]
+  ],
+  "rewards": {
+    "function": "chroma:nightmare_fuel/use"
+  }
+}

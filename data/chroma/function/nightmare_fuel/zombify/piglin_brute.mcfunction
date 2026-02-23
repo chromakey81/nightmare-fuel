@@ -1,0 +1,4 @@
+function chroma:nightmare_fuel/zombify/main
+execute if data storage chroma:storage root.temp.Age run data modify entity @s IsBaby set from storage chroma:storage root.temp.Age
+execute if data storage chroma:storage root.temp.Brain.memories."minecraft:angry_at".ttl run data modify entity @s anger_end_time set from storage chroma:storage root.temp.Brain.memories."minecraft:angry_at".ttl
+execute if data storage chroma:storage root.temp.Brain.memories."minecraft:angry_at".value run data modify entity @s angry_at set from storage chroma:storage root.temp.Brain.memories."minecraft:angry_at".value
