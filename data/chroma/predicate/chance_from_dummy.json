@@ -3,7 +3,7 @@
   "chance": {
     "type": "minecraft:score",
     "target": "this",
-    "score": "chroma.dummy",
+    "score": "nightmare_fuel.dummy",
     "scale": 0.01
   }
 }

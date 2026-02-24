@@ -1,4 +1,4 @@
-execute store result score @s chroma.dummy run data get entity @s SelectedItem.components."minecraft:custom_data".chroma.model
-execute unless score @s chroma.dummy matches 1.. if entity @s[nbt={SelectedItem:{id:"minecraft:crossbow",components:{"minecraft:charged_projectiles":[{components:{"minecraft:custom_data":{chroma:{id:"nightmare_fuel"}}}}]}}}] run return run item modify entity @s weapon.mainhand chroma:add_crossbow_model
-execute if score @s chroma.dummy matches 1.. unless data entity @s SelectedItem.components."minecraft:charged_projectiles"[0] run item modify entity @s weapon.mainhand chroma:remove_crossbow_model
-scoreboard players reset @s chroma.dummy
+execute store result score @s nightmare_fuel.dummy run data get entity @s SelectedItem.components."minecraft:custom_data".chroma.model
+execute unless score @s nightmare_fuel.dummy matches 1.. if entity @s[nbt={SelectedItem:{id:"minecraft:crossbow",components:{"minecraft:charged_projectiles":[{components:{"minecraft:custom_data":{chroma:{id:"nightmare_fuel"}}}}]}}}] run return run item modify entity @s weapon.mainhand chroma:add_crossbow_model
+execute if score @s nightmare_fuel.dummy matches 1.. unless data entity @s SelectedItem.components."minecraft:charged_projectiles"[0] run item modify entity @s weapon.mainhand chroma:remove_crossbow_model
+scoreboard players reset @s nightmare_fuel.dummy
